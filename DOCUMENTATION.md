@@ -1,0 +1,2 @@
+- https://eslint.org/docs/latest/extend/plugins
+- https://www.npmjs.com/package/generator-eslint
