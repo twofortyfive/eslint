@@ -1,4 +1,4 @@
-# eslint-plugin-eslint-mathieu-eveillard
+# eslint-plugin-mathieu-eveillard
 
 Additional rules enforcing some architectural aspects as well as code style
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-eslint-mathieu-eveillard`:
+Next, install `eslint-plugin-mathieu-eveillard`:
 
 ```sh
-npm install eslint-plugin-eslint-mathieu-eveillard --save-dev
+npm install eslint-plugin-mathieu-eveillard --save-dev
 ```
 
 ## Usage
@@ -42,7 +42,11 @@ Then configure the rules you want to use under the rules section.
 ## Rules
 
 <!-- begin auto-generated rules list -->
-TODO: Run eslint-doc-generator to generate the rules list.
+
+| Name                                                         | Description                                                |
+| :----------------------------------------------------------- | :--------------------------------------------------------- |
+| [no-restricted-imports](docs/rules/no-restricted-imports.md) | Forbid given imports from given packages into given paths. |
+
 <!-- end auto-generated rules list -->
 
 
