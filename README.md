@@ -23,7 +23,7 @@ Add `eslint-mathieu-eveillard` to the plugins section of your `.eslintrc` config
 ```json
 {
     "plugins": [
-        "eslint-mathieu-eveillard"
+        "mathieu-eveillard"
     ]
 }
 ```
@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "eslint-mathieu-eveillard/rule-name": 2
+        "mathieu-eveillard/rule-name": 2
     }
 }
 ```
