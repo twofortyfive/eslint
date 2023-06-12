@@ -5,16 +5,15 @@
 "use strict";
 
 const RuleTester = require("eslint").RuleTester;
-const path = require("path");
 const rule = require("../../../lib/rules/no-restricted-imports");
 
 const ruleTester = new RuleTester({
   parser: require.resolve("@typescript-eslint/parser"),
 });
 
-const fileFromDomain = path.resolve(__dirname, "src/core/index.ts");
+const FILE_FROM_DOMAIN = "src/core/index.ts";
 
-const fileOutsideOfDomain = path.resolve(__dirname, "src/views/index.tsx");
+const FILE_OUTSIDE_OF_DOMAIN = "src/views/index.tsx";
 
 const options = [
   {
@@ -35,14 +34,14 @@ ruleTester.run("no-restricted-imports", rule, {
         import foo from "bar";
       `,
       options,
-      filename: fileFromDomain,
+      filename: FILE_FROM_DOMAIN,
     },
     {
       code: `
         import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
       `,
       options,
-      filename: fileOutsideOfDomain,
+      filename: FILE_OUTSIDE_OF_DOMAIN,
     },
   ],
 
@@ -58,7 +57,7 @@ ruleTester.run("no-restricted-imports", rule, {
             "Unauthorized import of package '@reduxjs/toolkit' into 'src/core'",
         },
       ],
-      filename: fileFromDomain,
+      filename: FILE_FROM_DOMAIN,
     },
     {
       code: `
@@ -71,7 +70,7 @@ ruleTester.run("no-restricted-imports", rule, {
             "Unauthorized import of package 'react-redux' into 'src/core'",
         },
       ],
-      filename: fileFromDomain,
+      filename: FILE_FROM_DOMAIN,
     },
     {
       code: `
@@ -89,7 +88,7 @@ ruleTester.run("no-restricted-imports", rule, {
             "Unauthorized import of package 'react-redux' into 'src/core'",
         },
       ],
-      filename: fileFromDomain,
+      filename: FILE_FROM_DOMAIN,
     },
   ],
 });
