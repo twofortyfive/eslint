@@ -43,9 +43,9 @@ Then configure the rules you want to use under the rules section.
 
 <!-- begin auto-generated rules list -->
 
-| Name                                                         | Description                                                |
-| :----------------------------------------------------------- | :--------------------------------------------------------- |
-| [no-restricted-imports](docs/rules/no-restricted-imports.md) | Forbid given imports from given packages into given paths. |
+| Name                                                         | Description                                      |
+| :----------------------------------------------------------- | :----------------------------------------------- |
+| [no-restricted-imports](docs/rules/no-restricted-imports.md) | Forbid import of given packages into given paths |
 
 <!-- end auto-generated rules list -->
 

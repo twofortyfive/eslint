@@ -1,8 +1,8 @@
-# Forbid given imports from given packages into given paths (`eslint-mathieu-eveillard/no-restricted-imports`)
+# Forbid import of given packages into given paths (`mathieu-eveillard/no-restricted-imports`)
 
 <!-- end auto-generated rule header -->
 
-This rule aims to prevent a developer to import given packages into specific folders, thus enforcing a clear dependency schema (e.g. functional core / imperative shell, hexagonal architecture).
+This rule aims to prevent a developer of importing given packages into specific paths, thus enforcing a clear dependency schema (e.g. functional core / imperative shell, hexagonal architecture).
 
 ## Rule Details
 
