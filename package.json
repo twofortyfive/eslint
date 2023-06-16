@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-mathieu-eveillard",
-  "version": "0.0.2",
-  "description": "Additional rules enforcing some architectural aspects as well as code style",
+  "name": "@twofortyfive/eslint-plugin",
+  "version": "0.0.1",
+  "description": "ESLint rules enforcing architectural aspects and code style",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -15,7 +15,8 @@
     "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
     "lint:js": "eslint .",
     "test": "mocha tests --recursive",
-    "update:eslint-docs": "eslint-doc-generator"
+    "update:eslint-docs": "eslint-doc-generator",
+    "publish:ship": "npm run test && npm run lint && npm publish --access=public"
   },
   "dependencies": {
     "requireindex": "^1.2.0"

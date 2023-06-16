@@ -8,6 +8,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../../lib/rules/no-restricted-imports");
 
 const ruleTester = new RuleTester({
+  // eslint-disable-next-line node/no-unpublished-require
   parser: require.resolve("@typescript-eslint/parser"),
 });
 

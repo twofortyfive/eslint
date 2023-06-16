@@ -1,4 +1,4 @@
-# Forbid import of given packages into given paths (`mathieu-eveillard/no-restricted-imports`)
+# Forbid import of given packages into given paths (`@twofortyfive/no-restricted-imports`)
 
 <!-- end auto-generated rule header -->
 

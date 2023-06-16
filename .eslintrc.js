@@ -10,7 +10,6 @@ module.exports = {
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
-  root: true,
   env: {
     node: true,
   },
@@ -20,4 +19,7 @@ module.exports = {
       env: { mocha: true },
     },
   ],
+  rules: {
+    "@typescript-eslint/no-var-requires": "off",
+  },
 };

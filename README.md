@@ -1,4 +1,4 @@
-# eslint-plugin-mathieu-eveillard
+# @twofortyfive/eslint-plugin
 
 Additional rules enforcing some architectural aspects as well as code style
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-mathieu-eveillard`:
+Next, install `@twofortyfive/eslint-plugin`:
 
 ```sh
-npm install eslint-plugin-mathieu-eveillard --save-dev
+npm install @twofortyfive/eslint-plugin --save-dev
 ```
 
 ## Usage
